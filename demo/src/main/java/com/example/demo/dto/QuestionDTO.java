@@ -1,7 +1,7 @@
 package com.example.demo.dto;
 
 import lombok.Data;
-import model.User;
+import com.example.demo.model.User;
 
 @Data
 public class QuestionDTO {

@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="/css/community.css">
     <script src="/js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="/js/bootstrap-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var closeable = window.localStorage.getItem("closeable");
+            if(closeable === "true"){
+                window.close();
+                window.localStorage.removeItem("closeable");
+            }
+        }
+    </script>
 </head>
 <body>
 <div th:insert="~{navigation :: nav}"></div>

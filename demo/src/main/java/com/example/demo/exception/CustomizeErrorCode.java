@@ -8,7 +8,9 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     SYS_ERROR(2004, "服务器繁忙，请稍后再试！"),
     TYPE_PARAM_WRONG(2005, "评论类型错误或不存在"),
     COMMENT_NOT_FOUND(2006, "查询评论不存在"),
-    CONTENT_IS_EMPTY(2007, "输入内容不存在!");
+    CONTENT_IS_EMPTY(2007, "输入内容不存在!"),
+    READ_NOTIFICATION_FAIL(2008, "查看通知失败"),
+    NOTIFICATION_NOT_FOUND(2009, "通知不存在，请重试");
 
     private Integer code;
     private String message;

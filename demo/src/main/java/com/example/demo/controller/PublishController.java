@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.cache.TagCache;
 import com.example.demo.dto.QuestionDTO;
 import com.example.demo.service.QuestionService;
 import com.example.demo.model.Question;
@@ -21,7 +22,8 @@ public class PublishController {
     private QuestionService questionService;
 
     @GetMapping("/publish")
-    public String publish() {
+    public String publish(Model model) {
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
@@ -32,6 +34,7 @@ public class PublishController {
         model.addAttribute("description", question.getDescription());
         model.addAttribute("tag", question.getTag());
         model.addAttribute("id", id);
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
@@ -43,6 +46,7 @@ public class PublishController {
             @RequestParam(value = "id", required = false) Long id,
             HttpServletRequest request,
             Model model) {
+        model.addAttribute("tags", TagCache.get());
         model.addAttribute("title", title);
         model.addAttribute("description", description);
         model.addAttribute("tag", tag);
@@ -66,7 +70,7 @@ public class PublishController {
         Question question = new Question();
         question.setTitle(title);
         question.setDescription(description);
-        question.setTag(tag);
+        question.setTag(tag.replaceAll("[,，]","|"));
         question.setCreator(user.getId());
         question.setId(id);
         questionService.createOrUpdate(question);

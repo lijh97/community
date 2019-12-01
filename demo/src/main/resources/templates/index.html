@@ -29,7 +29,7 @@
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span>发现</h2>
             <hr>
-            <div class="media" th:each="question : ${pagination.questions}">
+            <div class="media" th:each="question : ${pagination.data}">
                 <div class="media-left">
                     <a href="#">
                         <img class="media-object img-rounded" th:src="${question.user.avatarUrl}">
@@ -55,7 +55,7 @@
                             <span aria-hidden="true">&lt;</span>
                         </a>
                     </li>
-                    <li th:each="page : ${pagination.pages}" th:class="(${pagination.page}==${page})? 'active'">
+                    <li th:each="page : ${pagination.pages}" th:class="(${pagination.page}==${page})? 'active':''">
                         <a th:text="${page}" th:href="@{/(page=${page})}"></a></li>
                     <li>
                         <a th:href="@{/(page=${pagination.page}+1)}" aria-label="Next" th:if="${pagination.showNext}">

@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.dto.PaginationDTO;
 import com.example.demo.dto.QuestionDTO;
+import com.example.demo.dto.QuestionQueryDTO;
 import com.example.demo.exception.CustomizeErrorCode;
 import com.example.demo.exception.CustomizeException;
 import com.example.demo.mapper.QuestionExtMapper;
@@ -34,17 +35,20 @@ public class QuestionService {
     private QuestionMapper questionMapper;
 
     //在首页展示问题
-    public PaginationDTO list(Integer page, Integer size) {
-        Integer totalCount = (int)questionMapper.countByExample(new QuestionExample());
+    public PaginationDTO list(Integer page, Integer size, String search) {
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
         Integer offset;
         page = modifyPage(page, size, totalCount);
         if (page > 0)
             offset = size * (page - 1);
         else
             offset = 0;
-        QuestionExample questionExample = new QuestionExample();
-        questionExample.setOrderByClause("gmt_create desc");
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample, new RowBounds(offset, size));
+        questionQueryDTO.setPage(page);
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setOffset(offset);
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
         return getPaginationDTO(page, size, totalCount, questions);
     }
 

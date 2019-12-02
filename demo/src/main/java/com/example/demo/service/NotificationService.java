@@ -88,7 +88,7 @@ public class NotificationService {
     public Long unread(Long id) {
         NotificationExample notificationExample = new NotificationExample();
         notificationExample.createCriteria().
-                andStatusEqualTo(NotificationStatusEnum.UNREAD.getStatus()).andNotifierEqualTo(id);
+                andStatusEqualTo(NotificationStatusEnum.UNREAD.getStatus()).andReceiverEqualTo(id);
         return notificationMapper.countByExample(notificationExample);
     }
 

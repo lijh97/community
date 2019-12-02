@@ -1,0 +1,11 @@
+2019-12-02 21:19:49.669  INFO 236592 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-VNLSP62 with PID 236592 (D:\develop\demo\target\classes started by 李锦豪 in D:\develop\demo)
+2019-12-02 21:19:49.670  INFO 236592 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-12-02 21:19:54.270  INFO 236592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-12-02 21:19:54.275  INFO 236592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-02 21:19:54.276  INFO 236592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-02 21:19:54.347  INFO 236592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-02 21:19:54.348  INFO 236592 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4674 ms
+2019-12-02 21:19:55.292  INFO 236592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-02 21:19:55.332  INFO 236592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-12-02 21:19:55.333  INFO 236592 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 5.783 seconds (JVM running for 4291.689)
+2019-12-02 21:19:55.336  INFO 236592 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

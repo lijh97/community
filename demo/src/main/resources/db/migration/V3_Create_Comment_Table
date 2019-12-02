@@ -1,0 +1,13 @@
+create table comment
+(
+	id bigint auto_increment,
+	type int not null,
+	parent_id bigint not null,
+	commentator bigint not null,
+	gmt_create bigint not null,
+	gmt_modified bigint not null,
+	like_count bigint not null,
+	content char(100) not null,
+	constraint comment_pk
+		primary key (id)
+);

@@ -97,9 +97,9 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/demo?serverTimezone=UTC</url>
+                    <url>jdbc:mysql://10.9.42.133:3306/community?serverTimezone=UTC</url>
                     <user>root</user>
-                    <password>123</password>
+                    <password>lijinhao123</password>
                 </configuration>
                 <dependencies>
                     <dependency>

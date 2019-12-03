@@ -82,3 +82,375 @@
 2019-12-03 00:13:23.373 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
 2019-12-03 00:13:23.374 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
 2019-12-03 00:13:23.375 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:56.943 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:13:56.944 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:13:56.963 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:56.965 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:13:56.969 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:13:56.970 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:13:56.972 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:13:56.973 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:13:56.976 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:13:56.977 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:13:56.978 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:13:57.063 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:13:57.066 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.067 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:13:57.072 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.074 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.075 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.076 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.078 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.079 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.081 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.083 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.084 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.085 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.092 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.093 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.094 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.096 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.096 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.098 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.100 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.100 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.101 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.103 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.104 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.105 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.108 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.109 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.110 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.111 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:13:57.112 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:13:57.114 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.262 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:13:57.263 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:13:57.267 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:13:57.270 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:13:57.271 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:13:57.287 DEBUG 248724 --- [http-nio-8887-exec-2] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:17:20.392 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:17:20.435 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:17:20.480 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.497 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:17:20.498 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:17:20.499 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:17:20.512 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:17:20.512 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:17:20.513 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:17:20.606 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:17:20.606 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:17:20.611 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:17:20.617 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.618 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:17:20.620 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.626 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.626 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.627 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.628 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.628 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.630 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.631 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.631 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.632 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.635 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.636 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.637 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.638 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.639 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.640 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.641 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.642 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.643 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.644 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.645 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.646 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.647 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.648 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.649 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.650 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:17:20.650 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:17:20.651 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.944 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:17:20.945 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:17:20.947 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:17:20.949 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:17:20.950 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:17:20.951 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:18:29.587 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:18:29.588 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:18:29.589 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.605 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:18:29.606 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:18:29.606 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:18:29.608 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:18:29.608 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:18:29.609 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:18:29.610 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:18:29.610 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:18:29.615 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:18:29.618 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.619 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:18:29.621 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.623 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.623 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.624 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.628 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.629 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.630 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.632 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.632 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.633 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.635 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.635 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.636 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.638 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.638 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.640 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.641 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.642 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.643 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.645 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.645 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.647 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.648 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.649 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.650 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.652 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:18:29.653 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:18:29.654 DEBUG 248724 --- [http-nio-8887-exec-4] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.820 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:18:29.822 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:18:29.823 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:18:29.829 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:18:29.830 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:18:29.832 DEBUG 248724 --- [http-nio-8887-exec-7] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:20:15.183 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:20:15.192 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:20:15.355 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.359 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:20:15.360 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:20:15.361 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:20:15.386 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:20:15.386 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:20:15.387 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:20:15.388 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:20:15.388 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:20:15.391 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:20:15.399 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.399 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:20:15.400 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.403 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.404 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.405 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.406 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.406 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.407 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.409 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.410 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.411 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.412 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.413 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.414 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.415 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.416 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.417 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.418 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.418 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.420 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.421 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.422 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.423 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.425 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.425 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.426 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.428 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:15.429 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:15.430 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.710 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:20:15.712 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:20:15.713 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:15.715 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:20:15.715 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:20:15.717 DEBUG 248724 --- [http-nio-8887-exec-5] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:20:22.649 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:20:22.662 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:20:22.664 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.670 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:20:22.671 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:20:22.671 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:20:22.673 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:20:22.673 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:20:22.674 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:20:22.675 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:20:22.675 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:20:22.679 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:20:22.680 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.681 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:20:22.682 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.686 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.686 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.688 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.690 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.690 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.691 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.695 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.695 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.696 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.703 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.704 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.705 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.706 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.707 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.708 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.709 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.710 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.711 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.713 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.713 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.714 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.717 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.718 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.719 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:20:22.720 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:20:22.721 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:20:22.721 DEBUG 248724 --- [http-nio-8887-exec-3] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:31.790 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:22:31.873 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:22:32.181 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.197 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:22:32.201 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:22:32.202 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:22:32.491 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:22:32.491 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:22:32.493 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:22:32.494 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:22:32.504 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:22:32.509 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:22:32.510 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.511 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:22:32.513 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.518 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.518 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.519 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.521 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.522 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.523 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.524 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.525 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.526 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.527 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.528 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.528 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.530 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.531 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.532 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.533 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.533 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.534 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.535 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.535 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.536 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.536 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.537 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.538 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:32.539 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:32.539 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:32.541 DEBUG 248724 --- [http-nio-8887-exec-10] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:33.192 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:22:33.193 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:22:33.195 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:33.198 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:22:33.198 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:22:33.199 DEBUG 248724 --- [http-nio-8887-exec-8] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:22:49.264 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:22:49.265 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:22:49.266 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.268 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:22:49.269 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:22:49.270 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:22:49.275 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:22:49.276 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:22:49.277 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:22:49.277 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:22:49.278 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:22:49.281 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:22:49.282 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.283 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:22:49.283 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.285 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.285 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.286 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.287 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.288 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.290 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.291 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.294 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.294 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.295 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.296 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.296 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.297 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.298 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.299 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.300 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.302 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.303 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.304 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.305 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.307 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.308 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.309 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.310 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:22:49.311 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:22:49.311 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:22:49.312 DEBUG 248724 --- [http-nio-8887-exec-1] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.208 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:28:28.328 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:28:28.435 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.675 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:28:28.678 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:28:28.680 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.N.countByExample                 : <==      Total: 1
+2019-12-03 00:28:28.727 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from question 
+2019-12-03 00:28:28.728 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-03 00:28:28.729 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-03 00:28:28.730 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.Q.selectBySearch                 : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-12-03 00:28:28.731 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 10(Integer)
+2019-12-03 00:28:28.742 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.m.Q.selectBySearch                 : <==      Total: 10
+2019-12-03 00:28:28.744 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.744 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 33(Long)
+2019-12-03 00:28:28.746 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.750 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.751 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.752 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.753 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.754 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.755 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.756 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.757 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.758 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.759 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.760 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.761 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.763 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.764 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.766 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.768 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.768 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.770 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.771 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.771 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.772 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.773 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.774 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.775 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:28.777 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( id = ? ) 
+2019-12-03 00:28:28.777 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: 32(Long)
+2019-12-03 00:28:28.778 DEBUG 248724 --- [http-nio-8887-exec-6] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:30.552 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, avatar_url from user WHERE ( token = ? ) 
+2019-12-03 00:28:30.553 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.mapper.UserMapper.selectByExample  : ==> Parameters: b67234df-cb4e-4b82-a627-e707b3586f9c(String)
+2019-12-03 00:28:30.556 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-03 00:28:30.559 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( status = ? and receiver = ? ) 
+2019-12-03 00:28:30.560 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.m.N.countByExample                 : ==> Parameters: 0(Integer), 32(Long)
+2019-12-03 00:28:30.562 DEBUG 248724 --- [http-nio-8887-exec-9] c.e.d.m.N.countByExample                 : <==      Total: 1
